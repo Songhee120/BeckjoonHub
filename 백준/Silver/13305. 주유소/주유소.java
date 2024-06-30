@@ -23,11 +23,11 @@ public class Main {
         }
 
         int i = 0;
-        int result = 0;
+        long result = 0;
         while(i < N - 1) {
             // 2. 본인보다 저렴한 주유소 탐색
             int pos = i + 1;
-            int dist = distArr[i];
+            long dist = distArr[i];
             int cnt = 1;
             while(pos < N - 1 && priceArr[i] <= priceArr[pos]) {
                 dist += distArr[pos];
